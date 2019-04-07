@@ -159,6 +159,8 @@ namespace MyCodeCamp.Data
 
     public async Task<bool> SaveAllAsync()
     {
+            //await _context.SaveChangesAsync();
+            //return true;       
       return (await _context.SaveChangesAsync()) > 0;
     }
   }
